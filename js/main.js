@@ -152,9 +152,13 @@ function initScrollAnimations() {
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener("click", function (e) {
-      e.preventDefault();
       var href = this.getAttribute("href");
-      if (href === "#") return;
+      if (href === "#") {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        return;
+      }
+      e.preventDefault();
       var target = document.querySelector(href);
       if (target) {
         var offset = document.getElementById("navbar").offsetHeight + 20;
