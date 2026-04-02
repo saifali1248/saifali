@@ -153,7 +153,9 @@ function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
-      var target = document.querySelector(this.getAttribute("href"));
+      var href = this.getAttribute("href");
+      if (href === "#") return;
+      var target = document.querySelector(href);
       if (target) {
         var offset = document.getElementById("navbar").offsetHeight + 20;
         var position = target.offsetTop - offset;
