@@ -1,6 +1,6 @@
 /* ============================================
-   كرادة داين - Karrada Dine
-   Arabic RTL Restaurant/Café Website
+   مطعم عنتاب - Antep Restaurant
+   Arabic RTL Turkish Restaurant Website
    Cool Professional Color Palette
    ============================================ */
 
@@ -652,6 +652,80 @@ ul {
   line-height: 1.6;
 }
 
+/* ---------- Gallery Showcase ---------- */
+.gallery-showcase {
+  margin-top: 2rem;
+}
+
+.gallery-grid-full {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1rem;
+}
+
+.gallery-grid-full .gallery-item {
+  position: relative;
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  height: 250px;
+}
+
+.gallery-grid-full .gallery-item.large {
+  grid-column: 1 / -1;
+  height: 350px;
+}
+
+.gallery-grid-full .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-slow);
+}
+
+.gallery-grid-full .gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: var(--white);
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.gallery-item:hover .gallery-caption {
+  opacity: 1;
+}
+
+/* ---------- Single Card Layouts ---------- */
+.times-grid.single {
+  grid-template-columns: 1fr;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-grid.single {
+  grid-template-columns: 1fr;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.contact-card.wide {
+  text-align: center;
+}
+
+.hero-rating {
+  margin-bottom: 2rem;
+}
+
 /* ---------- Section Divider ---------- */
 .section-divider {
   padding: 3rem 0;
@@ -1132,6 +1206,18 @@ ul {
     grid-template-columns: 1fr;
   }
 
+  .gallery-grid-full {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid-full .gallery-item {
+    height: 200px;
+  }
+
+  .gallery-grid-full .gallery-item.large {
+    height: 250px;
+  }
+
   .map-container {
     height: 300px;
   }
@@ -1161,5 +1247,14 @@ ul {
 
   .restaurant-hero-img {
     height: 300px;
+  }
+
+  .gallery-grid-full {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid-full .gallery-item,
+  .gallery-grid-full .gallery-item.large {
+    height: 200px;
   }
 }
