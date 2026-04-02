@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ذا غرايندرز - الكرادة | The Grinders Karrada</title>
+    <meta name="description" content="ذا غرايندرز - مقهى مميز في الكرادة، بغداد. قهوة فاخرة، أجواء راقية، وخدمة استثنائية.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">&#9749;</span>
+                <span class="logo-text">ذا غرايندرز</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">الرئيسية</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#menu">القائمة</a></li>
+                <li><a href="#gallery">معرض الصور</a></li>
+                <li><a href="#reviews">آراء الزبائن</a></li>
+                <li><a href="#location">الموقع</a></li>
+                <li><a href="#contact" class="nav-cta">تواصل معنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">&#9733; 4.3 من 5 - أكثر من 603 تقييم</div>
+            <h1>ذا غرايندرز</h1>
+            <p class="hero-subtitle">الكرادة - بغداد</p>
+            <p class="hero-desc">تجربة قهوة استثنائية في قلب بغداد. نقدم لكم أجود أنواع القهوة المختصة مع أجواء عصرية وخدمة مميزة.</p>
+            <div class="hero-actions">
+                <a href="#menu" class="btn btn-primary">اكتشف قائمتنا</a>
+                <a href="#location" class="btn btn-outline">زُرنا الآن</a>
+            </div>
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <span class="feature-icon">&#127869;</span>
+                    <span>جلوس داخلي</span>
+                </div>
+                <div class="hero-feature">
+                    <span class="feature-icon">&#128666;</span>
+                    <span>استلام من المتجر</span>
+                </div>
+                <div class="hero-feature">
+                    <span class="feature-icon">&#128230;</span>
+                    <span>توصيل بدون تلامس</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>&#8595;</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">من نحن</span>
+                <h2>قصتنا مع القهوة</h2>
+                <p class="section-subtitle">أكثر من مجرد مقهى... إنها تجربة</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p>
+                        في قلب منطقة الكرادة العريقة في بغداد، يقع مقهى <strong>ذا غرايندرز</strong> كوجهة مثالية لعشاق القهوة المختصة. نحن نؤمن بأن كل فنجان قهوة يروي قصة، ونسعى لتقديم تجربة استثنائية تجمع بين الجودة العالية والأجواء الدافئة.
+                    </p>
+                    <p>
+                        من حبوب البن المختارة بعناية إلى التحضير الاحترافي، نحرص على أن تكون كل رشفة تجربة لا تُنسى. يتميز مقهانا بتصميم عصري أنيق يوفر مساحة مريحة للعمل والاسترخاء واللقاءات.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">603+</span>
+                            <span class="stat-label">تقييم إيجابي</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4.3</span>
+                            <span class="stat-label">تقييم عام</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5-10K</span>
+                            <span class="stat-label">دينار عراقي للشخص</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-images">
+                    <div class="about-img about-img-main">
+                        <img src="images/pdf/storefront.png" alt="واجهة مقهى ذا غرايندرز" loading="lazy">
+                    </div>
+                    <div class="about-img about-img-secondary">
+                        <img src="images/pdf/interior-counter.jpeg" alt="داخل مقهى ذا غرايندرز" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">قائمة المشروبات</span>
+                <h2>مشروباتنا المميزة</h2>
+                <p class="section-subtitle">اكتشف تشكيلتنا الواسعة من المشروبات الساخنة والباردة</p>
+            </div>
+
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-tab="hot">المشروبات الساخنة</button>
+                <button class="menu-tab" data-tab="coffee">مشروبات القهوة</button>
+                <button class="menu-tab" data-tab="other">مشروبات أخرى</button>
+            </div>
+
+            <div class="menu-content">
+                <!-- Hot Drinks -->
+                <div class="menu-panel active" id="tab-hot">
+                    <div class="menu-grid">
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="images/web/coffee-cup.jpg" alt="فلات وايت" loading="lazy">
+                            </div>
+                            <div class="menu-card-info">
+                                <h3>فلات وايت</h3>
+                                <p>قهوة إسبريسو مع حليب مخفوق بنعومة</p>
+                                <span class="menu-price">4,500 د.ع</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="images/web/espresso.jpg" alt="بيستاشيو لاتيه" loading="lazy">
+                            </div>
+                            <div class="menu-card-info">
+                                <h3>بيستاشيو لاتيه</h3>
+                                <p>لاتيه بنكهة الفستق الفاخرة</p>
+                                <span class="menu-price">5,250 - 7,000 د.ع</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="images/pdf/latte-art.jpeg" alt="كراميل ماكياتو" loading="lazy">
+                            </div>
+                            <div class="menu-card-info">
+                                <h3>كراميل ماكياتو</h3>
+                                <p>إسبريسو مع حليب مبخر وصلصة الكراميل</p>
+                                <span class="menu-price">4,250 - 7,250 د.ع</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="images/web/coffee-beans.jpg" alt="توفي لاتيه" loading="lazy">
+                            </div>
+                            <div class="menu-card-info">
+                                <h3>توفي لاتيه</h3>
+                                <p>لاتيه بنكهة التوفي الغنية</p>
+                                <span class="menu-price">5,250 - 7,000 د.ع</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coffee Drinks -->
+                <div class="menu-panel" id="tab-coffee">
+                    <div class="menu-grid">
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="images/web/espresso.jpg" alt="لاتيه" loading="lazy">
+                            </div>
+                            <div class="menu-card-info">
+                                <h3>لاتيه</h3>
+                                <p>إسبريسو مع حليب مبخر كريمي</p>
+                                <span class="menu-price">4,000 د.ع</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="images/web/coffee-cup.jpg" alt="كابتشينو" loading="lazy">
+                            </div>
+                            <div class="menu-card-info">
+                                <h3>كابتشينو</h3>
+                                <p>إسبريسو مع رغوة الحليب الكثيفة</p>
+                                <span class="menu-price">3,500 د.ع</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="images/web/coffee-beans.jpg" alt="موكا" loading="lazy">
+                            </div>
+                            <div class="menu-card-info">
+                                <h3>موكا</h3>
+                                <p>مزيج رائع من القهوة والشوكولاتة</p>
+                                <span class="menu-price">4,500 د.ع</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="images/pdf/latte-art.jpeg" alt="سبانيش لاتيه" loading="lazy">
+                            </div>
+                            <div class="menu-card-info">
+                                <h3>سبانيش لاتيه</h3>
+                                <p>لاتيه بالحليب المكثف على الطريقة الإسبانية</p>
+                                <span class="menu-price">4,500 د.ع</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="images/web/espresso.jpg" alt="وينتر سبايسي لاتيه" loading="lazy">
+                            </div>
+                            <div class="menu-card-info">
+                                <h3>وينتر سبايسي لاتيه</h3>
+                                <p>لاتيه بتوابل الشتاء الدافئة</p>
+                                <span class="menu-price">5,000 د.ع</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="images/web/coffee-beans.jpg" alt="إسبريسو" loading="lazy">
+                            </div>
+                            <div class="menu-card-info">
+                                <h3>إسبريسو</h3>
+                                <p>قهوة إسبريسو مركزة وقوية</p>
+                                <span class="menu-price">3,000 د.ع</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Beverages -->
+                <div class="menu-panel" id="tab-other">
+                    <div class="menu-grid">
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="images/web/coffee-cup.jpg" alt="شوكولاتة ساخنة مميزة" loading="lazy">
+                            </div>
+                            <div class="menu-card-info">
+                                <h3>شوكولاتة ساخنة مميزة</h3>
+                                <p>شوكولاتة ساخنة فاخرة بوصفتنا الخاصة</p>
+                                <span class="menu-price">5,000 د.ع</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="images/web/espresso.jpg" alt="ماتشا لاتيه" loading="lazy">
+                            </div>
+                            <div class="menu-card-info">
+                                <h3>ماتشا لاتيه</h3>
+                                <p>شاي الماتشا الياباني مع الحليب المبخر</p>
+                                <span class="menu-price">5,000 د.ع</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="images/web/coffee-cup.jpg" alt="شاي لاتيه" loading="lazy">
+                            </div>
+                            <div class="menu-card-info">
+                                <h3>شاي لاتيه</h3>
+                                <p>شاي ممزوج مع الحليب المبخر</p>
+                                <span class="menu-price">4,000 د.ع</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">معرض الصور</span>
+                <h2>لمحات من أجوائنا</h2>
+                <p class="section-subtitle">اكتشف المكان قبل زيارتك</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item-wide">
+                    <img src="images/pdf/storefront.png" alt="واجهة المقهى" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>واجهة المقهى</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/pdf/counter-order.jpeg" alt="منطقة الطلبات" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>منطقة الطلبات</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/pdf/interior-products.jpeg" alt="منتجاتنا" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>منتجاتنا</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-tall">
+                    <img src="images/pdf/interior-people.jpeg" alt="أجواء المقهى" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>أجواء المقهى</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/pdf/latte-art.jpeg" alt="فن اللاتيه" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>فن اللاتيه</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/pdf/neon-sign.jpeg" alt="لافتة المقهى" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>كل ما تحتاجه هو القهوة</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/pdf/menu-board.jpeg" alt="قائمة المشروبات" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>قائمة المشروبات</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/web/cafe-interior.jpg" alt="تصميم داخلي عصري" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>تصميم داخلي عصري</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">آراء الزبائن</span>
+                <h2>ماذا يقول زبائننا</h2>
+                <p class="section-subtitle">تجارب حقيقية من زوارنا الكرام</p>
+            </div>
+
+            <div class="reviews-summary">
+                <div class="reviews-score">
+                    <span class="score-number">4.3</span>
+                    <div class="score-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                    <span class="score-count">بناءً على 603 تقييم</span>
+                </div>
+                <div class="reviews-bars">
+                    <div class="bar-row">
+                        <span class="bar-label">5 &#9733;</span>
+                        <div class="bar-track"><div class="bar-fill" style="width: 55%"></div></div>
+                    </div>
+                    <div class="bar-row">
+                        <span class="bar-label">4 &#9733;</span>
+                        <div class="bar-track"><div class="bar-fill" style="width: 25%"></div></div>
+                    </div>
+                    <div class="bar-row">
+                        <span class="bar-label">3 &#9733;</span>
+                        <div class="bar-track"><div class="bar-fill" style="width: 12%"></div></div>
+                    </div>
+                    <div class="bar-row">
+                        <span class="bar-label">2 &#9733;</span>
+                        <div class="bar-track"><div class="bar-fill" style="width: 5%"></div></div>
+                    </div>
+                    <div class="bar-row">
+                        <span class="bar-label">1 &#9733;</span>
+                        <div class="bar-track"><div class="bar-fill" style="width: 3%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-tags">
+                <span class="review-tag">المساحة <small>33</small></span>
+                <span class="review-tag">الأسعار <small>17</small></span>
+                <span class="review-tag">التدخين <small>13</small></span>
+                <span class="review-tag">الأجواء <small>8</small></span>
+            </div>
+
+            <div class="reviews-carousel">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">أ</div>
+                        <div>
+                            <h4>أحمد علي</h4>
+                            <span class="review-meta">مرشد محلي &middot; 32 تقييم &middot; 81 صورة</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>واحد من أفضل المقاهي في بغداد. خدمة ممتازة ونظافة على أعلى مستوى. يقدمون حلويات جميلة ونكهات مميزة. أنصح أي شخص يريد قضاء وقت ممتع مع القهوة بزيارتهم. أنصح بعصير مدغشقر، نكهته رائعة في كل مرة!</p>
+                    <span class="review-date">قبل سنتين</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">ع</div>
+                        <div>
+                            <h4>عمار وحيد</h4>
+                            <span class="review-meta">مرشد محلي &middot; 169 تقييم &middot; 533 صورة</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>مكان رائع، نظيف، وأشخاص ودودون. أعجبني كثيراً! الطعام ممتاز والخدمة سريعة ومحترفة.</p>
+                    <span class="review-date">قبل شهرين</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">ص</div>
+                        <div>
+                            <h4>صفاء</h4>
+                            <span class="review-meta">مرشد محلي &middot; 140 تقييم &middot; 233 صورة</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+                    <p>كنت أخطط لإعطاء المقهى 5 نجوم. قهوة جيدة، استقبال رائع مع خدمة ممتازة. الأسعار مقبولة مع واي فاي مجاني. دورات المياه نظيفة. النقطة السلبية الوحيدة هي السماح بالتدخين.</p>
+                    <span class="review-date">قبل 4 أشهر</span>
+                </div>
+            </div>
+
+            <div class="reviews-note">
+                <p>&#128172; الطلب المذكور: كيكة سان سبيستيان، شاي لاتيه، أليبو ساخن، تراميسو، ميلك شايك</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Times Section -->
+    <section class="section popular-times" id="popular-times">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">أوقات الذروة</span>
+                <h2>أفضل أوقات الزيارة</h2>
+                <p class="section-subtitle">اختر الوقت المناسب لزيارة هادئة</p>
+            </div>
+            <div class="times-chart">
+                <div class="chart-day">أيام الخميس</div>
+                <div class="chart-bars">
+                    <div class="chart-bar-group">
+                        <div class="chart-bar" style="height: 15%"><span class="chart-label">6ص</span></div>
+                    </div>
+                    <div class="chart-bar-group">
+                        <div class="chart-bar" style="height: 20%"><span class="chart-label">9ص</span></div>
+                    </div>
+                    <div class="chart-bar-group">
+                        <div class="chart-bar" style="height: 45%"><span class="chart-label">12م</span></div>
+                    </div>
+                    <div class="chart-bar-group">
+                        <div class="chart-bar" style="height: 60%"><span class="chart-label">3م</span></div>
+                    </div>
+                    <div class="chart-bar-group">
+                        <div class="chart-bar highlight" style="height: 90%"><span class="chart-label">6م</span></div>
+                    </div>
+                    <div class="chart-bar-group">
+                        <div class="chart-bar highlight" style="height: 100%"><span class="chart-label">9م</span></div>
+                    </div>
+                    <div class="chart-bar-group">
+                        <div class="chart-bar" style="height: 70%"><span class="chart-label">12ص</span></div>
+                    </div>
+                </div>
+                <p class="chart-note">&#128308; الآن: مزدحم كالعادة في أوقات الذروة</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="section location" id="location">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">موقعنا</span>
+                <h2>تجدنا هنا</h2>
+                <p class="section-subtitle">في قلب الكرادة، بغداد</p>
+            </div>
+            <div class="location-grid">
+                <div class="location-map">
+                    <img src="images/pdf/map.png" alt="خريطة موقع ذا غرايندرز الكرادة" loading="lazy">
+                    <a href="https://www.google.com/maps/place/The+Grinders+karrada/@33.309233,44.4397766" target="_blank" rel="noopener noreferrer" class="map-link">
+                        افتح في خرائط جوجل &#8592;
+                    </a>
+                </div>
+                <div class="location-info">
+                    <div class="info-card">
+                        <div class="info-icon">&#128205;</div>
+                        <div>
+                            <h4>العنوان</h4>
+                            <p>8C6P+J47، بغداد، محافظة بغداد، 00000</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">&#128336;</div>
+                        <div>
+                            <h4>ساعات العمل</h4>
+                            <p>مفتوح الآن &middot; يغلق الساعة 1 صباحاً</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">&#128176;</div>
+                        <div>
+                            <h4>متوسط الأسعار</h4>
+                            <p>5,000 - 10,000 دينار عراقي للشخص</p>
+                            <small>بحسب تقارير 215 شخص</small>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">&#128222;</div>
+                        <div>
+                            <h4>الهاتف</h4>
+                            <p><a href="tel:+9647724534248" class="phone-link">0772 453 4248</a></p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">&#128230;</div>
+                        <div>
+                            <h4>اطلب الآن</h4>
+                            <p><a href="https://www.talabat.com" target="_blank" rel="noopener noreferrer" class="order-link">اطلب عبر طلبات</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>جرّب قهوتنا اليوم</h2>
+                    <p>زُرنا في الكرادة واستمتع بتجربة قهوة لا تُنسى. يمكنك أيضاً الطلب عبر طلبات للتوصيل.</p>
+                    <div class="cta-actions">
+                        <a href="tel:+9647724534248" class="btn btn-primary">اتصل بنا</a>
+                        <a href="https://www.talabat.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">اطلب عبر طلبات</a>
+                    </div>
+                    <div class="cta-social">
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">&#9749;</span>
+                    <span class="logo-text">ذا غرايندرز - الكرادة</span>
+                    <p>تجربة قهوة استثنائية في قلب بغداد</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#about">من نحن</a></li>
+                        <li><a href="#menu">القائمة</a></li>
+                        <li><a href="#gallery">معرض الصور</a></li>
+                        <li><a href="#reviews">آراء الزبائن</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>تواصل معنا</h4>
+                    <p>&#128222; 0772 453 4248</p>
+                    <p>&#128205; الكرادة، بغداد، العراق</p>
+                    <p>&#128336; مفتوح حتى 1 صباحاً</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ذا غرايندرز - الكرادة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
